@@ -1,0 +1,378 @@
+<main>
+
+  <!-- hero section  -->
+  <section class="hero-section">
+    <div class="container d-flex mt-5 align-items-center text-white text-center">
+      <form class="row g-3 w-100 my-5 py-2 justify-content-center">
+        <div class="text-content col-12 mb-4">
+          <h1>THẾ GIỚI TRỌN NIỀM VUI</h1>
+          <h2>Khám phá niềm vui của bạn mọi lúc, mọi nơi - từ chuyến du lịch ngẫu hứng tới những cuộc phiêu lưu khắp thế
+            giới</h2>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 m-3">
+          <label for="inputCity" class="form-label">Địa điểm</label>
+          <div class="input-group">
+            <input type="text" ng-model="search" class="form-control" id="inputCity">
+            <div class="input-group-text"><i class="bi bi-geo-alt"></i></div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 m-3" ng-controller="myctrl">
+          <label for="inputState" class="form-label">Tour</label>
+          <select id="inputState" class="form-select" ng-model="search">
+            <option ng-repeat="tour in tours" value="{{tour}}">{{tour}}</option>
+          </select>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 m-3" ng-controller="myctrl">
+          <label for="inputZip" class="form-label">Tháng</label>
+          <select id="inputZip" class="form-select" ng-model="search">
+            <option ng-repeat="thang in months" value="{{thang}}">{{thang}}</option>
+          </select>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 m-3">
+          <label for="inputPrice" class="form-label">Giá: </label>
+          <label>{{ price }} tr VND</label>
+          <input type="range" class="form-range" min="0" max="10" step="1" id="customRange3" ng-model="price">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 m-3">
+          <button type="text" ng-model="search" class="btn btn-primary w-100 my-4 py-3">Tìm Tour</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- one section -->
+  <section class="one-section">
+
+    <div class="container">
+      <div class="row my-5 text-center d-flex justify-content-center">
+        <div class="col-6 col-md-4 col-lg-2 icon">
+          <a href="">
+            <img src="/WebDuLich/images/lich-trinh-tour-du-lich-icon.png" alt="" class="img-fluid">
+          </a>
+          <h5>Lịch khởi hành</h5>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="">
+            <img src="/WebDuLich/images/tour-2024-du-lich-nuoc-ngoai.png" alt="" class="img-fluid">
+          </a>
+          <h5>Tour nước ngoài năm 2024</h5>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="">
+            <img src="/WebDuLich/images/icon-tour-mua-thu.png" alt="" class="img-fluid">
+          </a>
+          <h5>Tour mùa thu</h5>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="">
+            <img src="/WebDuLich/images/icon-dich-vu-visa.jpg" alt="" class="img-fluid">
+          </a>
+          <h5>Dịch vụ Visa</h5>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="">
+            <img src="/WebDuLich/images/trekking-adventures-icon.png" alt="" class="img-fluid">
+          </a>
+          <h5>Trekking & Adventures</h5>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="">
+            <img src="/WebDuLich/images/icon-team-building.jpg" alt="" class="img-fluid">
+          </a>
+          <h5>Team Building</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Những vùng đất thú vị để khám phá</h2>
+      <div id="carouselExampleAutoplaying" class="carousel slide  " data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card-wapper">
+              <div class="card">
+                <div class="img-wapper">
+                  <img src="images/standee-tour-con-duong-to-lua-240x300.jpg" class="card-img-top img-fluid" alt="...">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Tour Con Đường Tơ Lụa</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-wapper">
+                  <img src="images/standee-tour-himalayas-2024-240x300.jpg" class="card-img-top img-fluid" alt="...">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Tour Himalayas</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-wapper">
+                  <img src="images/standee-tour-san-bac-cuc-quang-2024-240x300.jpg" class="card-img-top img-fluid"
+                    alt="...">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Tour Săn Cực Quang Iceland</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card-wapper">
+              <div class="card">
+                <div class="img-wapper">
+                  <img src="images/standee-tour-trung-quoc-2024-240x300.jpg" class="card-img-top img-fluid" alt="...">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Tour Hành Trình Trung Hoa</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-wapper">
+                  <img src="images/standee-tour-xe-may-chau-au-240x300.jpg" class="card-img-top img-fluid" alt="...">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Tour Motor Adventure</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-wapper">
+                  <img src="images/tour-ai-cap-standee-240x300.jpg" class="card-img-top img-fluid" alt="...">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Tour Ai Cập</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Two section -->
+  <section class="two-section ">
+    <div class="container ">
+      <div class="mb-3">
+        <h1>SIGNATURE TOUR</h1>
+        <div class="star-container">
+          <span class="line"></span>
+          <span><i class="bi bi-star"></i></span>
+          <span class="line"></span>
+        </div>
+      </div>
+
+      
+
+      <div class="row">
+        <div class="col-12 col-md-6 mb-3 w-50"  ng-repeat="p in products | limitTo: 4">
+          <div class="card">
+            <div class="row g-0 d-flex flex-wrap">
+              <div class="col-12 col-md-3">
+                <img src="{{p.image}}" class="img-fluid rounded-start h-100"  alt="...">
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">{{p.name}}</h5>
+                  <p class="card-text">{{p.mota}}</p>
+                  <p class="card-text"><small class="text-body-secondary"><i class="bi bi-clock"></i> {{p.time}}</small></p>
+                </div>
+              </div>
+              <div class="card-price col-12 col-md-3 text-center d-flex flex-column justify-content-center">
+                <h5 class="card-title my-3">{{p.price | number:0}} VND</h5>
+                <a href="#!detail/{{p.id}}" class="btn btn-primary mt-2">Xem chi tiết</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- three-section -->
+  <section class="three-section">
+    <div class="container">
+      <div class="row  text-white">
+        <div class="col-12 col-md-10">
+          <p>Chỉ riêng đoàn của bạn</p>
+        </div>
+        <div class="col-12 col-md-10">
+          <h2>Thiết kế tour riêng (Private Tour)</h2>
+        </div>
+        <div class="col-12 col-md-10">
+          <p>
+            Bạn sẽ được lên chương trình bởi các Local Experiences Trip Planner. Hành trình được thiết kế riêng
+            theo sở thích, nhu cầu, "Guu" đi chơi của bạn. Chi phí hợp lý và tiết kiệm.
+          </p>
+        </div>
+        <div class="col-12 col-md-10">
+          <a href="#" class="btn btn-primary">Lên Plan Ngay</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- four section -->
+
+  <section class="four-section py-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col">
+          <h2 class="text-dark">Ưu đãi cho bạn</h2>
+        </div>
+      </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card border-0">
+              <a href="" target="_blank">
+                <img src="/WebDuLich/images/hinh_uudai(2).png" class="d-block w-100">
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card border-0">
+              <a href="" target="_blank">
+                <img src="/WebDuLich/images/hinh_uudai(3).png" class="d-block w-100">
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card border-0">
+              <a href="" target="_blank">
+                <img src="/WebDuLich/images/hinh_uudai(1).png" class="d-block w-100">
+              </a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- five-section -->
+
+  <section class="five-section py-5">
+    <div class="container">
+      <div class=" mb-4">
+        <h2>Vì sao bạn nên chọn TravelFake</h2>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 text-center p-3">
+            <div class="usp-card-icon "><i class="bi bi-map"></i></div>
+            <h5 class="usp-card-title">Vô vàn lựa chọn</h5>
+            <p class="usp-card-desc">Tìm kiếm niềm vui với gần nửa triệu điểm tham quan, phòng khách sạn và nhiều
+              trải nghiệm thú vị</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 text-center p-3">
+            <div class="usp-card-icon "><i class="bi bi-tags"></i></div>
+            <h5 class="usp-card-title">Chơi vui, giá tốt</h5>
+            <p class="usp-card-desc">Trải nghiệm chất lượng với giá tốt. Tích luỹ TravelFake credit để được thêm ưu
+              đãi</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 text-center p-3">
+            <div class="usp-card-icon "><i class="bi bi-lightning"></i></div>
+            <h5 class="usp-card-title">Dễ dàng và tiện lợi</h5>
+            <p class="usp-card-desc">Đặt vé xác nhận ngay, miễn xếp hàng, miễn phí hủy, tiện lợi cho bạn tha hồ khám
+              phá</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 text-center p-3">
+            <div class="usp-card-icon "><i class="bi bi-send-check"></i></div>
+            <h5 class="usp-card-title">Đáng tin cậy</h5>
+            <p class="usp-card-desc">Tham khảo đánh giá chân thực. Dịch vụ hỗ trợ tận tình, đồng hành cùng bạn mọi
+              lúc, mọi nơi</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- six section -->
+  <section class="six-section">
+    <div class="container">
+      <h1>Gallery</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card text-bg-dark mb-3">
+            <img src="/WebDuLich/images/doan-nghi-ngoi-dung-tra-o-mot-thung-lung-1024x576.jpg" class="card-img"
+              alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Đi bộ qua những con đường mòn để khám phá sự kỳ diệu của vùng Annapurna.</h5>
+              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card text-bg-dark mb-3">
+                <img src="/WebDuLich/images/du-lich-mien-tay-8.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Tham quan Vườn trái cây sạch</h5>
+                  <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card text-bg-dark mb-3">
+                <img src="/WebDuLich/images/moi-nguoi-cuoi-lac-da-xung-quanh-khu-cam-trai-siwa-768x432.jpg"
+                  class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Ai Cập, vùng đất của kim tự tháp và dòng sông Nile hùng vĩ. </h5>
+                  <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card text-bg-dark mb-3">
+                <img src="/WebDuLich/images/RICHFIEL12Thumnail.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">CHUYẾN THAM QUAN ĐÀ NẴNG 28-30/4 CÙNG CTY PHÚ TRƯỜNG QUỐC TẾ RICHFIEL</h5>
+                  <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card text-bg-dark mb-3">
+                <img src="/WebDuLich/images/Sohaco6Thumnail.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">CÔNG TY SOHACO CHO CHUYẾN TEAMBUILDING TẠI PHAN THIẾT 11-12/5</h5>
+                  <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

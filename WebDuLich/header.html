@@ -1,0 +1,204 @@
+<header class="px-20">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a href="#!" class="logo d-flex align-items-center me-auto">
+                <h1 class="sitename">TravelFake</h1><span>.</span>
+            </a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h1 class="sitename">TravelFake</h1><span>.</span>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" aria-current="page" href="#!">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#!tour">Tour</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#!privatetour">Private tour</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#!blog">Cẩm nang du lịch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#!lienhe">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a  class="search-button mx-lg-3 m-3 text-decoration-none" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                <i class="bi bi-person-circle"></i>
+            </a>
+            <a href="#!cart" class="cart-button mx-lg-3 text-decoration-none position-relative">
+                <i class="bi bi-cart"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" >
+                    {{getTotalQuantity()}}
+                </span>
+            </a>
+            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Modal Đăng ký -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="bi bi-pencil-square"></i> ĐĂNG KÝ</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form name="frmDangKy">
+                <div class="container col-10">
+                    <div class="row">
+                        <div class="form-group my-2">
+                            <label>Username:</label>
+                            <input name="txtUser" class="form-control" ng-model="fullname" required>
+                            <span ng-show="frmDangKy.txtUser.$touched && frmDangKy.txtUser.$invalid">Vui lòng nhập họ và
+                                tên</span>
+                        </div>
+                        <div class="form-group my-2">
+                            <label>Email:</label>
+                            <input name="txtEmail" type="email" class="form-control" ng-model="email" required>
+                            <span ng-show="frmDangKy.txtEmail.$touched && frmDangKy.txtEmail.$invalid">Vui lòng nhập
+                                email hợp lệ</span>
+                        </div>
+                        <div class="form-group my-2">
+                            <label>Password:</label>
+                            <input name="txtPass" class="form-control" ng-model="pass" type="password" required>
+                            <span ng-show="frmDangKy.txtPass.$touched && frmDangKy.txtPass.$invalid">Vui lòng nhập mật
+                                khẩu</span>
+                        </div>
+                        <div class="form-group my-2">
+                            <label>Confirm password:</label>
+                            <input name="txtConfirm" class="form-control" ng-model="confirm" type="password" required>
+                            <span ng-show="frmDangKy.txtConfirm.$touched && frmDangKy.txtConfirm.$invalid">Vui lòng nhập
+                                lại mật khẩu</span>
+                        </div>
+                        <div ng-if="frmDangKy.txtConfirm.$touched && pass !== confirm" class="error"
+                            style="color: red;">
+                            Mật khẩu không khớp.
+                        </div>
+                        <div class="form-group d-flex my-2">
+                            <label>Giới Tính:</label>
+                            <div class="radio ms-3">
+                                <label><input type="radio" ng-model="gender" value="NAM"> Nam</label>
+                                <label class="ms-5"><input type="radio" ng-model="gender" value="NU"> Nữ</label>
+                            </div>
+                        </div>
+                        <div class="form-group my-2">
+                            <label>Quốc gia:</label>
+                            <select ng-model="country" class="form-select">
+                                <option ng-repeat="c in countries" value="{{c}}">{{c}}</option>
+                            </select>
+                        </div>
+                        <div class="form-group my-2">
+                            <input type="checkbox" ng-model="agree">
+                            <span>Đồng ý với các điều khoản</span>
+                        </div>
+                        <table class="table">
+                            <tr>
+                                <th>Thông tin</th>
+                                <th>Dữ liệu</th>
+                            </tr>
+                            <tr>
+                                <td>Họ và tên:</td>
+                                <td>{{fullname}}</td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td>{{email}}</td>
+                            </tr>
+                            <tr>
+                                <td>Password:</td>
+                                <td>{{pass}}</td>
+                            </tr>
+                            <tr>
+                                <td>Confirm password:</td>
+                                <td>{{confirm}}</td>
+                            </tr>
+                            <tr>
+                                <td>Giới tính:</td>
+                                <td>{{gender}}</td>
+                            </tr>
+                            <tr>
+                                <td>Quốc gia:</td>
+                                <td>{{country}}</td>
+                            </tr>
+                            <tr>
+                                <td>Đồng ý các điều khoản:</td>
+                                <td>{{agree}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <label>Bạn đã có tài khoản? <a class="dangnhap-button" data-bs-toggle="modal"
+                                data-bs-target="#dangnhapModal">Đăng nhập</a></label>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-dark w-25 mx-2">Đăng ký</button>
+                    <button type="button" class="btn btn-light w-25 mx-2" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal Đăng nhập -->
+<div class="modal fade" id="dangnhapModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form name="frmDangNhap" novalidate>
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="bi bi-pencil-square"></i> ĐĂNG NHẬP
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="form-floating mb-3">
+                                <input name="txtEmail" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" ng-model="email" required>
+                                <label class="mx-3" for="floatingInput">Email address</label>
+                                <span ng-show="frmDangNhap.txtEmail.$invalid">Vui lòng nhập email hợp lệ</span>
+                            </div>
+                            <div class="form-floating">
+                                <input name="txtPass" type="password" class="form-control" id="floatingPassword" placeholder="Password" ng-model="pass" required>
+                                <label class="mx-3" for="floatingPassword">Password</label>
+                                <span ng-show="frmDangNhap.txtPass.$invalid">Vui lòng nhập mật khẩu</span>
+                            </div>
+                            <table class="table">
+                                <tr>
+                                    <th>Thông tin</th>
+                                    <th>Dữ liệu</th>
+                                </tr>
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>{{email}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Password:</td>
+                                    <td>{{pass}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-dark w-50" ng-disabled="frmDangNhap.$invalid">Đăng nhập</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

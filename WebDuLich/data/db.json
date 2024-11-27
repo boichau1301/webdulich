@@ -1,0 +1,306 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Tour du lịch Ai Cập 2024 trọn gói – Hành trình đến kỳ quan",
+            "price": "8199000",
+            "image": "https://dulichcoguu.com/wp-content/uploads/2024/03/tour-ai-cap-standee-2024.jpg",
+            "tag":["Tour cao cấp","Tour theo đoàn"],
+            "star": "4.9",
+            "danhgia": "60",
+            "viewer": "2,700",
+            "time": "4 ngày 3 đêm",
+            "khoihanh": "17,21,28/02; 06,13,20,27/03; 03,10,17/04/2024",
+            "vanchuyen": "xe du lịch",
+            "xuatphat": "Từ Hà Nội",
+            "hinhchitiet":"https://dulichcoguu.com/wp-content/uploads/2022/11/tour-ai-cap-fit-tour.jpg",
+            "mota": "Tour du lịch Ai Cập 2024 trọn gói với nhiều hoạt động: cưỡi lạc đà, đi du thuyền 5 sao trên sông Nile, đốt lửa trại, bay khinh khí cầu ở Luxor,… ",
+            "lichtrinh": [
+                {
+                    "ngay": 1,
+                    "tieude": "Ngày 1 : Việt nam - Cario",
+                    "motasp": "Hướng dẫn viên FIT Tour đón khách tại điểm hẹn sân bay trước giờ bay 3 tiếng.Chuyến bay sẽ quá cảnh và nối chuyến đến sân bay Cairo – thành phố của văn minh cổ đại Thông tin chuyến bay dự kiến transit tại Doha.Đến Cairo, đoàn dùng bữa tối và nghỉ ngơi tại khách sạn."
+                },
+                {
+                    "ngay": 2,
+                    "tieude": "Ngày 2 : Cario -Sawa",
+                    "motasp": "07:00 Đoàn trả phòng khách sạn và thưởng thức bữa sáng thú vị tại khách sạn. Bắt đầu cuộc hành trình thú vị đến Siwa. 11:30 Thưởng thức bữa trưa hảo hạng tại nhà hàng địa phương trên đường đi, thêm hương vị địa phương vào trải nghiệm du lịch của bạn. Sau bữa trưa thỏa mãn, cuộc phiêu lưu tiếp tục. 16:00 Đến Siwa và khám phá pháo đài cổ ở Shali, ghi lại vẻ đẹp của hoàng hôn trên Ốc đảo Siwa đầy mê hoặc. 18:00 Thưởng thức bữa tối ngon miệng tại nhà hàng duyên dáng, sau đó trở về khách sạn nghỉ ngơi và lấy lại sức khỏe."
+                },
+                {
+                    "ngay": 3,
+                    "tieude": "Ngày 3 : Sawa - Sahara",
+                    "motasp": "Sáng: Đoàn thưởng thức bữa sáng lúc bình minh giữa sa mạc Sahara. 07:30: Trở về khách sạn ở Siwa tắm mát, thu dọn đồ đạc, trả phòng và bắt đầu hành trình về thủ đô Cairo. 11:30: Trên đường đến Cairo, đoàn dừng chân dùng bữa trưa tại nhà hàng địa phương ở Marsa Matrouh, sau đó tiếp tục hành trình. Trên đường đi, họ có cơ hội chiêm ngưỡng những phong cảnh rộng lớn và ngoạn mục. 16:00: Đến Alexandria, đoàn nhận phòng khách sạn để nghỉ ngơi xứng đáng. 18:30: Thưởng thức bữa tối tại nhà hàng địa phương và thư giãn khám phá Alexandria.</p>"
+                },
+                {
+                    "ngay": 4,
+                    "tieude": "Ngày 4 : Kim Tự Tháp Giza - Bảo tàng quốc gia Ai Cập",
+                    "motasp": "Sáng: Đoàn thưởng thức bữa sáng và ngắm bình minh trên sa mạc bên Kim tự tháp Giza hùng vĩ.08:00: Tour khám phá biểu tượng của nền văn minh và trí tuệ nhân loại, Kim tự tháp Giza. Du khách sẽ cưỡi lạc đà để đến Đại kim tự tháp Giza, công trình kiến ​​trúc Ai Cập cổ đại có niên đại hàng nghìn năm. Đi sâu vào bên trong các kim tự tháp để khám phá những công trình kiến ​​trúc ấn tượng và những lối đi bí ẩn dành riêng cho những người có trái tim dũng cảm. Tiếp theo, du khách bắt gặp Tượng Nhân sư, bức tượng khổng lồ được coi là người bảo vệ Kim tự tháp Giza, có tuổi đời hơn 4000 năm. Nó đóng vai trò như một nhân chứng cho sự phát triển lên xuống của con người qua nhiều thiên niên kỷ. Trải nghiệm cưỡi lạc đà tại Kim tự tháp Giza. 11:30: Trở về ăn trưa sau khi khám phá những kiệt tác của nhân loại. Sau đó, du khách sẽ ghé thăm Bảo tàng Ai Cập, nơi lưu giữ hơn 160.000 tác phẩm lịch sử về pharaon. Mỗi tác phẩm được coi là một kiệt tác với câu chuyện độc đáo, trong đó có kho báu lộng lẫy của vua Tutankhamun. 16:30: Đoàn ra sân bay đáp chuyến bay về Việt Nam, thưởng thức bữa tối nhẹ tại sân bay. "
+                }
+            ]
+        },
+        
+        {
+            "id": 2,
+            "name": "Motor Tour châu Âu 16 ngày dãy Alps: Đức, Áo, Ý, Thụy Sĩ, Pháp",
+            "price": "6599000",
+            "image": "https://dulichcoguu.com/wp-content/uploads/2024/03/tour-xe-may-chau-au-standee-2024.jpg",
+            "tag":["Tour cao cấp","Tour theo đoàn"],
+            "star": "4.5",
+            "danhgia": "64",
+            "viewer": "2,212",
+            "time": "5 ngày 4 đêm",
+            "khoihanh": "17,21,28/01; 06,13,20,27/03; 03,10,17/08/2024",
+            "vanchuyen": "xe du lịch",
+            "xuatphat": "Từ Thành phố Hồ Chí Minh",
+            "hinhchitiet":"https://dulichcoguu.com/wp-content/uploads/2024/01/tour-du-lich-chau-au-bang-xe-may.jpg",
+            "mota": "Motor Tour 16 ngày trên dãy Apls qua các quốc gia Đức, Áo, Ý, Thụy Sĩ, Pháp là giấc mơ đối với bất kỳ người đi xe máy có kinh nghiệm nào.",
+            "lichtrinh": [
+                {
+                    "ngay": 1,
+                    "tieude": "Ngày 1 : Khởi hành đến Đức",
+                    "motasp": "Trưa: Tập trung tại điểm hẹn trước 3 tiếng chuyến bay đến Đức.\n\nChuyến bay dự kiến quá cảnh Singapore. Tiếp tục đón chuyến bay đến Đức. Đáp tại sân bay München, đoàn nhập cảnh lấy hành lý. Hướng dẫn viên chào đón đoàn đến với nước Đức, xe đưa đoàn về khách sạn nhận phòng và dùng bữa sáng – đoàn nghỉ ngơi sau chuyến bay dài.\n\nTrưa: Đoàn dùng bữa trưa tại nhà hàng địa phương, thưởng thức món Bratwurst (xúc xích Đức nướng) đặc trưng địa phương và uống Weiss Beer mát lạnh.\n\nSau buổi trưa, đoàn đi tham quan Bảo tàng BMW - một tòa nhà trưng bày các sản phẩm của BMW.\n\nTối: Đoàn dùng bữa tối, giao lưu và nghỉ ngơi cho hành trình ngày mai.",
+                    "hinh": " "
+                },
+                {
+                    "ngay": 2,
+                    "tieude": "Ngày 2 : Munchen - Dolomites",
+                    "motasp": "Hôm nay, hành trình đưa chúng ta đến Dolomites, một điểm đến không thể bỏ qua trong đời.\n\nDolomites nằm ở Ý, là một phần của dãy núi Alps, trải dài từ sông Adige ở phía tây đến thung lũng sông Piave (Pieve di Cadore) ở phía đông. Dãy núi này có diện tích rộng lớn 141.903 ha và tự hào có 18 đỉnh núi cao trên 3.000 mét."
+                },
+                {
+                    "ngay": 3,
+                    "tieude": "Ngày 3 : Dolomites - Bormio",
+                    "motasp": "Sáng: Ăn sáng và trả phòng.\n\nChia tay Dolomites. Khởi hành đi Bormio.\n\nNhóm sẽ chinh phục Đèo Stelvio: Đèo Stelvio là một con đèo ngoạn mục thuộc dãy Rhaetian Alps, đứng ở độ cao chóng mặt 2.758 mét so với mực nước biển. Nó nổi tiếng là con đường đèo cao nhất ở Ý và cao thứ hai ở châu Âu. Cùng với 88 vòng cua kẹp tóc, nó mang đến một thử thách thú vị cho cả những người đi xe đạp cũng như những nhà thám hiểm.\n\nChiều: Đến Bormio, nhận phòng, ăn tối. Hãy thư giãn và tận hưởng bầu không khí yên tĩnh của điểm đến quyến rũ này."
+                },
+                {
+                    "ngay": 4,
+                    "tieude": "Ngày 4 : Silvretta - Munchen",
+                    "motasp": "Sáng: Ăn sáng tại khách sạn. Đoàn chuẩn bị cho hành trình trở về Munich.\n\nSilvretta-Hochalpenstraße là một trong những con đường núi đẹp và nổi tiếng nhất dãy Alps. Không phải ngẫu nhiên mà nó được gọi là “con đường mơ ước trên dãy Alps dành cho người đi xe máy”. Phong cảnh núi non hùng vĩ của Silvretta cùng với các hồ Vermunt và Silvretta sẽ khiến những người đi xe đạp phải kinh ngạc trước vẻ đẹp thiên nhiên tựa như một bức tranh.\n\nNgười đi xe máy sẽ có cơ hội trải nghiệm ‘Autobahn’ nổi tiếng của Đức – một trong số ít đường công cộng trên thế giới không giới hạn tốc độ cho xe máy và ô tô.\n\nTrở về Munich – đoàn kết thúc và kết thúc hành trình.\n\nBuổi tối: Tiệc tối sẽ được tổ chức để đánh dấu sự kết thúc thành công của chuyến đi. Thưởng thức những món ăn ngon và chia sẻ những câu chuyện, trải nghiệm trong chuyến hành trình."
+                },
+                {
+                    "ngay": 5,
+                    "tieude": "Ngày 5 : Munchen - Vietnam",
+                    "motasp": "Đoàn dùng bữa sáng, thu dọn hành lý – xe đưa đoàn ra sân bay làm thủ tục trở về Việt Nam. Chuyến bay dự kiến:\n\nKhởi hành về Singapore\nQuá cảnh 02:45 về Việt Nam"
+                }
+                
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Tour du lịch Ladakh - Roadtrip (Khởi hành từ TP HCM)",
+            "price": "1299000",
+            "image": "https://dulichcoguu.com/wp-content/uploads/2024/03/tour-ladakh-standee-2024.jpg",
+            "tag":["Tour phổ thông","Tour khuyến mãi"],
+            "star": "4.5",
+            "danhgia": "64",
+            "viewer": "1,212",
+            "time": "3 ngày 2 đêm",
+            "khoihanh": "17,21,28/10; 06,13,20,27/11; 03,10,17/12/2024",
+            "vanchuyen": "xe du lịch",
+            "xuatphat": "Từ Thành phố Hồ Chí Minh",
+            "hinhchitiet":"https://dulichcoguu.com/wp-content/uploads/2021/11/tour-ladakh-fit-tour-2024.jpg",
+            "mota": "Tour du lịch trọn gói Ladakh, Ấn Độ. Hành trình ở lều cao cấp, nơi ở view núi, khách sạn 4 sao,…",
+            "lichtrinh": [
+                {
+                    "ngay": 1,
+                    "tieude": "Ngày 1 : Khởi hành đi Ấn Độ",
+                    "motasp": "Buổi chiều: Hướng dẫn viên FIT Tour đón khách tại điểm hẹn cột số 10, ga đi Quốc Tế – Cảng hàng không Tân Sơn Nhất.\n\nChuyến bay thẳng TP.HCM – NEW DELHI\n23:50 – Đoàn đáp xuống phi sân bay New Delhi. HDV địa phương chào đón đoàn.\n\nNhận hành lý về đến khách sạn gần sân bay và nghỉ đêm (Lưu ý là chỉ nghỉ đêm quá cảnh trước chuyến bay)"
+                },
+                {
+                    "ngay": 2,
+                    "tieude": "Ngày 2 : Delhi - Leh",
+                    "motasp": "Sáng: Đoàn dùng bữa sáng và trả phòng về lại với thị trấn Leh.\n\nTrên đường về với Leh, đoàn sẽ check in và cảm nhận sự hùng vĩ của dãy Himalaya trên con đèo dành cho đường cơ giới cao nhất Thế Giới – đèo KHADRUNG LA. Con đèo cao 5600m so với mực nước biển nối liền thị trấn Leh với khu vực phía Bắc của Ladakh.\n\nChiều: Đoàn về đến Leh dùng cơm, nhận phòng và nghỉ ngơi. Đoàn sẽ tự do khám phá thị trấn Leh.\n\nTối: Đoàn sẽ dùng cơm tối và nghỉ ngơi tại khách sạn."
+                },
+                {
+                    "ngay": 3,
+                    "tieude": "Ngày 3 : Leh -Tu viện Phayang - Đồi Magnetic - Sài Gòn",
+                    "motasp": "Sáng: Du khách sẽ dùng bữa sáng và đáp chuyến bay về với thủ đô Delhi.\n\nTối:\n\nĐoàn sẽ dùng cơm tại nhà hàng tại New Delhi và khởi hành ra sân bay Indira Gandhi.\nDu khách đáp chuyến bay đêm dự kiến 23:35 – 05:40 về lại TP. Hồ Chí Minh."
+                }
+            ]
+        },
+
+        {
+            "id": 4,
+            "name": "Tour du lịch Maroc 3 ngày 2 đêm",
+            "price": "1200000",
+            "image": "/WebDuLich/images/tour-maroc-standee-2024.jpg",
+            "tag":["Tour phổ thông","Tour ngày lễ"],
+            "star": "4.2",
+            "danhgia": "54",
+            "viewer": "3,212",
+            "time": "3 ngày 2 đêm",
+            "khoihanh": "17,21,28/07; 06,13,20,27/08; 03,10,17/09/2024",
+            "vanchuyen": "xe du lịch",
+            "xuatphat": "Từ Thành phố Hồ Chí Minh",
+            "hinhchitiet":"https://dulichcoguu.com/wp-content/uploads/2022/12/tour-du-lich-maroc.jpg",
+            "mota": "Tour du lịch Maroc 12 ngày 11 đêm khám phá vùng đất của câu chuyện 1001 đêm huyện diệu. ",
+            "lichtrinh": [
+                {
+                    "ngay": 1,
+                    "tieude": "Ngày 1 : Sài Gòn - Casablanca ",
+                    "motasp": "Quý khách tập trung tại sân bay. HDV đón quý khách tại Ga Quốc tế sân bay Tân Sơn Nhất, làm thủ tục đáp chuyến bay đi Morocco.\n\nĐoàn ăn sáng tại khách sạn, sau đó HDV và tài xế đón đoàn đi tham quan:\n\nKhu chợ trung tâm: ngôi chợ địa phương có truyền thống hơn 100 năm tuổi bày bán hầu như tất cả đặc sản, hương liệu, gia vị và quà lưu niệm địa phương.\n\nKhu phố Habbous và khu dân cư Anfa: Nơi có rất nhiều những quán café không gian mở và nhiều cửa hàng với đủ loại hàng hóa bắt mắt.\n\nCung điện Hoàng gia Maroc (tham quan bên ngoài).\n\nQuảng trường Mohamed V rộng lớn được bao quanh bởi những tòa nhà hành chính uy nghi ấn tượng, được xây dựng bằng đá trắng chạm trổ cầu kì, tinh xảo, luôn được canh gác bởi các kỵ binh hoàng gia.\n\nNhà thờ Hồi giáo Hassan II: Thánh đường Hồi giáo lớn thứ hai trên thế giới, làm bằng đá hoa cương với những hoa văn trang trí kiểu Ả Rập vương giả tuyệt đẹp."
+  
+                },
+                {
+                    "ngay": 2,
+                    "tieude": "Ngày 2 : Casablanca - Marrakech",
+                    "motasp": "Quý khách dùng bữa sáng tại khách sạn, sau đó tài xế và HDV sẽ đưa đoàn đến tham quan Marrakech – đây cũng là một trong 4 cố đô hoàng gia Morocco (cùng với Mekes, Fes và Rabat).\n\nĐoàn đến tham quan các địa điểm:\n\nNhà thờ Hồi giáo Koutoubia (tham quan và chụp ảnh từ bên ngoài), đây là thánh đường lớn nhất Thành phố, được xây dựng từ thế kỷ XII, nay là biểu tượng du lịch của Thành phố.\n\nLăng mộ Saadian được xây dựng từ cuối thế kỷ XVI, và tiếp tục được sử dụng chôn cất hoàng thân qua các thời kì. Ngày nay, lăng mộ được khách du lịch ưa thích tham quan vì ý nghĩa lịch sử và văn hoá chôn cất đặc trưng của người bản địa.\n\nCung điện Bahia, Cung điện được xây dựng từ thế kỉ thứ 19, tên gọi mang ý nghĩa là ‘Sáng chói” đã từng được kì vọng là Cung điện vĩ đại nhất."
+                },
+                {
+                    "ngay": 3,
+                    "tieude": "Ngày 3 : Casablanca - Việt nam",
+                    "motasp": "Quý khách dùng bữa sáng tại khách sạn và xe đưa đoàn ra sân bay Casablanca Mohamed V đáp chuyến bay về lại sân bay Tân Sơn Nhất, TP. Hồ Chí Minh, HDV hỗ trợ quý khách làm thủ tục lên máy bay."
+                }
+            ]
+        },
+
+        
+        {
+            "id": 5,
+            "name": "Tour Tham Quan Vũng Tàu Trong Ngày ",
+            "price": "1100000",
+            "image": "images/vungtau.jpg",
+            "tag":["Tour phổ thông","Tour trong ngày"],
+            "star": "4.9",
+            "danhgia": "120",
+            "viewer": "4,210",
+            "time": "1/2 ngày",
+            "khoihanh": "17,21,28/03; 06,13,20,27/07; 03,10,17/012/2024",
+            "vanchuyen": "xe du lịch",
+            "xuatphat": "Từ Thành phố Hồ Chí Minh",
+            "hinhchitiet":"https://res.klook.com/image/upload/c_fill,w_1265,h_712/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/dpkdkj5kcpkzo3zadywp.webp",
+            "mota": "Tận hưởng sự mịn màng của bãi cát vàng, hương trời gió biển sau những ngày làm việc mệt mỏi.\n\nĐắm mình trong từng con sóng nhẹ ở Bãi Thuỳ Vân Vũng Tàu.\n\nThưởng thức các món ăn đặc sắc tại nhà hàng địa phương.\n\nChụp ảnh tại Mũi Nghinh Phong, nơi hội tụ nhiều cảnh quan đẹp và được mệnh danh là địa điểm chụp ảnh “không có góc chết”."
+           
+        },
+
+        {
+            "id": 6,
+            "name": "Tour Ngắm Hoàng Hôn Trên Thuyền Gỗ Độc Mộc tại Cần Thơ",
+            "price": "1600000",
+            "image": "images/cantho.jpg",
+            "tag":["Tour phổ thông","Tour trong ngày"],
+            "star": "4.6",
+            "danhgia": "90",
+            "viewer": "4,210",
+            "time": "1/2 ngày",
+            "khoihanh": "17,21,28/03; 06,13,20,27/07; 03,10,17/012/2024",
+            "vanchuyen": "xe du lịch",
+            "xuatphat": "Từ Thành phố Hồ Chí Minh",
+            "hinhchitiet":"https://res.klook.com/image/upload/c_fill,w_1265,h_712/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/odkap7wmsodhvteeygsn.webp",
+            "mota": "Khám phá nét đặc trưng trong đời sống của người dân miền Tây hai bên bờ sông Hậu trên thuyền gỗ độc mộc.\n\nHoà mình với làn gió mát rượi, thong dong trên chiếc thuyền gỗ ngắm hoàng hôn rực rỡ ngay trên sông Hậu - một trong những lưu vực sông chính của sông Mêkông.\n\nThưởng thức các loại bánh đặc sản miền Tây như: bánh chuối nướng, bánh nếp hay bánh bò hay chill cùng người thân, bạn bè bên những cốc mojito mát lạnh.\n\nNgắm hoàng hôn nơi đường chân trời, lưu lại khoảnh khắc đáng nhớ tại Cần Thơ trên chiếc thuyền gỗ mộc mạc."
+        
+        },
+
+        {
+            "id": 7,
+            "name": "Tour Riêng Tham Quan Mũi Né Bằng Xe Jeep",
+            "price": "1400000",
+            "image": "images/phanthiet.jpg",
+            "tag":["Tour phổ thông","Tour trong ngày"],
+            "star": "4.6",
+            "danhgia": "90",
+            "viewer": "4,210",
+            "time": "1/2 ngày",
+            "khoihanh": "17,21,28/03; 06,13,20,27/07; 03,10,17/012/2024",
+            "vanchuyen": "xe du lịch",
+            "xuatphat": "Từ Thành phố Hồ Chí Minh",
+            "hinhchitiet":"https://res.klook.com/image/upload/u_activities:dqqx0jeeiedul2zdtza0,h_1.0,ar_960:460,c_scale,e_blur:10000/c_fill,w_1265,h_712/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/dqqx0jeeiedul2zdtza0.webp",
+            "mota": "Tạo nên những khoảnh khắc đáng nhớ cùng người thân và bạn bè khi tham gia chuyến tham quan bằng xe Jeep.\n\nKhám phá các hoạt động hàng ngày của người dân làng chài.\n\nTham quan Bàu Trắng (Đồi Cát Trắng) và Hồ Sen, một trong những đồi cát đẹp nhất của Bình Thuận.\n\nTrải nghiệm chuyến tham quan bằng xe Jeep độc đáo với hướng dẫn viên địa phương."
+        
+        },
+
+        {
+            "id": 8,
+            "name": "Trải Nghiệm Canyoning Vượt Thác Datanla",
+            "price": "1670000",
+            "image": "images/dalat.jpg",
+            "tag":["Tour phổ thông","Tour trong ngày"],
+            "star": "4.6",
+            "danhgia": "90",
+            "viewer": "4,210",
+            "time": "1/2 ngày",
+            "khoihanh": "17,21,28/03; 06,13,20,27/07; 03,10,17/012/2024",
+            "vanchuyen": "xe du lịch",
+            "xuatphat": "Từ Thành phố Hồ Chí Minh",
+            "hinhchitiet":"https://res.klook.com/image/upload/c_fill,w_1265,h_712/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/y9w45f2fdciamxyq5evf.webp",
+            "mota": "Khám phá một Đà Lạt thật trẻ trung, năng động và không kém phần hùng vĩ, dữ dội khi bạn trải nghiệm hành trình Vượt Thác Datanla đầy cam go.\n\nTìm hiểu về các quy trình an toàn khi tham gia các hoạt động mạo hiểm, các xử lý trong mọi trường hợp từ những hướng dẫn viên chuyên nghiệp.\n\nTận hưởng những phút giây \"thót tim\" nhưng cũng không kém phần thích thú khi bạn đu dây vượt thác hay \"thả tự do\" xuống dòng thác cuộn trắng xoá.\n\nĐi xuyên khu rừng già nguyên sinh ở Đà Lạt, khám phá hệ sinh thái đa dạng tại cao nguyên xinh đẹp."
+        
+        },
+
+        {
+            "id": 9,
+            "name": "Tour Ngày Tham Quan Hòn Bảy Cạnh & Hòn Tài bằng Tàu Cao Tốc",
+            "price": "1870000",
+            "image": "images/condao.jpg",
+            "tag":["Tour phổ thông","Tour trong ngày"],
+            "star": "4.6",
+            "danhgia": "90",
+            "viewer": "4,210",
+            "time": "1/2 ngày",
+            "khoihanh": "17,21,28/03; 06,13,20,27/07; 03,10,17/012/2024",
+            "vanchuyen": "xe du lịch",
+            "xuatphat": "Từ Hà Nội",
+            "hinhchitiet":"https://res.klook.com/image/upload/c_fill,w_1265,h_712/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/urn3x19oryujs5efstdw.webp",
+            "mota": "Thăm hòn Bảy Cạnh và hòn Tài là một trong số các quần thể đảo tuyệt đẹp tại Côn Đảo bằng tàu cao tốc.\n\nTìm hiểu về đặc tính sinh học của rùa biển, các quy trình bảo tồn rùa tại Vườn Quốc Gia Côn Đảo.\n\nTự do bơi lặn ngắm san hô, tận mắt chứng kiến cảnh đẹp đa màu sắc dưới đáy biển.\n\nKhám phá hệ sinh thái biển và check-in bãi cát trắng trải dài hình cánh cung, sừng sững giữa núi rừng Côn Đảo."
+        
+        },
+        {
+            "id": 10,
+            "name": "Tour Khám Phá Núi San Hô & Rặng san hô Bán Nguyệt",
+            "price": "1270000",
+            "image": "images/phuquoc.jpg",
+            "tag":["Tour phổ thông","Tour trong ngày"],
+            "star": "4.6",
+            "danhgia": "90",
+            "viewer": "4,210",
+            "time": "1/2 ngày",
+            "khoihanh": "17,21,28/03; 06,13,20,27/07; 03,10,17/012/2024",
+            "vanchuyen": "xe du lịch",
+            "xuatphat": "Từ Hà Nội",
+            "hinhchitiet":"https://res.klook.com/image/upload/c_fill,w_1265,h_712/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/jata23il6zvsvk59iugq.webp",
+            "mota": "Khám phá các hòn đảo xinh đẹp của Phú Quốc trong hành trình một ngày lướt sóng chu du trên chiếc tàu cao tốc di chuyển giữa các hòn đảo.\n\nChiêm ngưỡng vẻ đẹp tự nhiên tại Phú Quốc với 03 trong các hòn đảo: Hòn Mây Rút, Hòn Gầm Ghì và Hòn Móng Tay (hoặc Hòn Bườm).\n\nLặn sâu xuống dưới biển, tận mắt chiêm ngưỡng những tặng san hô đầy màu sắc và cuộc sống của các sinh vật biển đầy thú vị.\n\nThả dáng bên bãi biển và quay một chiếc clip được quay bằng flycam, kỉ niệm một chuyến đi tuyệt vời tại Phú Quốc (flycam có bao gồm trong tour).\n\nThưởng thức bữa trưa hải sản tươi ngon ngay trên Hòn Mây Rút, cảm nhận tiếng sóng rì rào trong lúc ăn trưa."
+        
+        }
+    ],
+
+
+    "blogs":
+    [
+        {
+            "id":1,
+            "image":"https://hktraveljapan.jp/wp-content/uploads/2024/04/hktravel-hoi-an-giua-long-nhat-ban-tai-thanh-pho-yokohama.jpg",
+            "title":"Sự kiện: Hội An giữa lòng Nhật Bản tại thành phố Yokohama",
+            "content":"Lấy cảm hứng từ những chiếc đèn lồng đầy màu sắc của chợ đêm Hội An, Việt Nam, lần thứ 4 sự kiện “Đêm đèn lồng” được tổ chức tại thành phố cảng Yokohama."
+        },
+        {
+            "id":2,
+            "image":"https://hktraveljapan.jp/wp-content/uploads/2024/04/hktravel-le-hoi-that-tich-tanabata-matsuri.jpg",
+            "title":"Lễ hội Thất tịch – Tanabata Matsuri",
+            "content":"Theo truyền thuyết, Ngân Hà ngăn cách tình yêu của hai người, khiến cho họ chỉ được phép gặp nhau mỗi năm một lần vào ngày thứ bảy của tháng Bảy âm lịch. "
+        },
+        {
+            "id":3,
+            "image":"https://hktraveljapan.jp/wp-content/uploads/2024/04/hktravel-hoa-kochia-no-mua-thu-tai-nhat-ban.jpg",
+            "title":"Khám Phá Vẻ Đẹp Sắc Màu của Hoa Kochia Nở Mùa Thu tại Nhật Bản",
+            "content":"Mùa thu tại Nhật Bản luôn đọng lại trong lòng người dấu ấn đậm nét với cảnh sắc thay đổi màu sắc và hương thơm ngọt ngào của các loài hoa. "
+        },
+        {
+            "id":4,
+            "image":"https://res.klook.com/image/upload/q_85/c_fill,w_1360/v1706859557/gbzoggvfd4ykqpeplded.webp",
+            "title":"Hè Đi Đâu Chơi? Các Địa Điểm Du Lịch Hè Xu Hướng 2024",
+            "content":"Bạn đang tìm kiếm trải nghiệm du lịch hè đầy cảm hứng? Vậy thì hãy cân nhắc các địa điểm du lịch hè trong và ngoài nước do Klook Vietnam đề cử nhé!"
+        },
+        {
+            "id":5,
+            "image":"https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_640,h_356/v1716280879/hmvnsugbctsvhznnkjzg.webp",
+            "title":"20 Địa Điểm Du Lịch Thái Lan Mùa Hè Vui Đụng Nóc",
+            "content":"Du lịch Thái Lan mùa hè - bạn đã biết đi đâu, chơi gì hay chưa? Hãy tham khảo các địa điểm du lịch mùa hè ở Thái Lan cũng như mẹo vặt vi vu hữu ích nhé."
+        },
+        {
+            "id":6,
+            "image":"https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1684842106/blog/pzqff6tvx41fmqhjypmi.webp",
+            "title":"39 Địa Điểm Du Lịch Gần Sài Gòn Cho Cuối Tuần Năng Động",
+            "content":"Cuối tuần nên đi đâu chơi gần Sài Gòn? Đã đến lúc kế hoạch du lịch gần nơi bạn sống. Hãy tham khảo ngay các địa điểm du lịch gần Sài Gòn dưới đây để lên kế hoạch khám phá Sài Gòn thật trọn vẹn nhé!"
+        }
+
+    ]
+}

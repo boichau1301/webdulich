@@ -1,0 +1,195 @@
+<main>
+
+  <section
+    class="experiences-intro d-flex justify-content-start align-items-center container-fluid text-white bg-dark p-5">
+    <div class="z-1">
+      <h1 class="display-4 mb-3">Thiết kế tour chỉ của riêng bạn</h1>
+      <h2>Khám phá những công viên cực đỉnh, bảo tàng cùng các địa đến nổi tiếng khác</h2>
+    </div>
+  </section>
+
+  <section class="form-tour container mt-5">
+    <div class="row ">
+      <div class="col-md-8">
+        <!-- Thông tin tour -->
+        <form class="rounded rounded border border-primary ">
+          <h3 class="text-center text-bg-primary">Thông tin tour</h3>
+          <div class="p-3">
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label for="transport" class="form-label">Loại hình</label>
+                <select class="form-select" id="transport">
+                  <option selected>Du lịch gia đình</option>
+                  <option>Du lịch cá nhân</option>
+                  <option>Du lịch dành cho công ty</option>
+                  <option>Du lịch cho học sinh - sinh viên</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="hotel" class="form-label">Khách sạn</label>
+                <input type="number" class="form-control" id="hotel" placeholder="Nhập số sao của khách sạn">
+              </div>
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label for="departure-date" class="form-label">Ngày đi</label>
+                <input type="datetime-local" class="form-control" id="departure-date">
+              </div>
+              <div class="col-md-6">
+                <label for="return-date" class="form-label">Ngày về</label>
+                <input type="datetime-local" class="form-control" id="return-date">
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <!-- Chi tiết tour -->
+
+        <form class="row g-3 rounded border border-info my-3 m-1">
+          <h3 class="text-center text-bg-info p-0 m-0">Chi tiết tour</h3>
+          <div class="col-md-6 mb-3">
+            <label for="destination" class="form-label">Điểm đến mong muốn</label>
+            <input type="text" class="form-control" id="destination" placeholder="Nhập điểm đến">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="travel-type" class="form-label">Loại hình du lịch yêu thích</label>
+            <select class="form-select" id="travel-type">
+              <option selected>Chọn loại hình du lịch</option>
+              <option value="adventure">Phiêu lưu</option>
+              <option value="relaxation">Nghỉ dưỡng</option>
+              <option value="cultural">Văn hóa</option>
+              <option value="nature">Thiên nhiên</option>
+              <option value="luxury">Sang trọng</option>
+            </select>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="transport-method" class="form-label">Phương tiện di chuyển</label>
+            <select class="form-select" id="transport-method">
+              <option selected>Chọn phương tiện di chuyển</option>
+              <option value="plane">Máy bay & ô tô</option>
+              <option value="train">Tàu hỏa</option>
+              <option value="car">Ô tô</option>
+              <option value="bus">Xe khách</option>
+              <option value="bike">Máy bay & xe khách</option>
+            </select>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="budget" class="form-label">Ngân sách dự kiến</label>
+            <select id="budget" class="form-select">
+              <option selected>dưới 1 triệu</option>
+              <option>dưới 2 triệu</option>
+              <option>5 triệu</option>
+              <option>10 triệu</option>
+              <option>20 triệu</option>
+              <option>50 triệu</option>
+              <option>trên 50 triệu</option>
+            </select>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="adults" class="form-label">Số lượng người lớn</label>
+            <input type="number" class="form-control" id="adults" placeholder="Người lớn">
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="children" class="form-label">Số lượng trẻ em</label>
+            <input type="number" class="form-control" id="children" placeholder="Trẻ em">
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="infants" class="form-label">Số lượng trẻ nhỏ (<= 6 tuổi)</label>
+                <input type="number" class="form-control" id="infants" placeholder="Trẻ nhỏ">
+          </div>
+          <div class="col-md-12 mb-3">
+            <label class="form-label">Sở thích</label>
+            <div class="d-flex flex-wrap">
+              <div class="form-check me-5">
+                <input class="form-check-input" type="checkbox" id="beach">
+                <label class="form-check-label" for="beach">Biển, thác, sông, suối</label>
+              </div>
+              <div class="form-check me-5">
+                <input class="form-check-input" type="checkbox" id="cuisine">
+                <label class="form-check-label" for="cuisine">Ẩm thực, văn hóa, lễ hội</label>
+              </div>
+              <div class="form-check me-5">
+                <input class="form-check-input" type="checkbox" id="temples">
+                <label class="form-check-label" for="temples">Chùa chiền</label>
+              </div>
+              <div class="form-check me-5">
+                <input class="form-check-input" type="checkbox" id="museums">
+                <label class="form-check-label" for="museums">Bảo tàng, di tích lịch sử</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="departure-location" class="form-label">Địa điểm khởi hành</label>
+            <textarea class="form-control" id="departure-location" rows="3" placeholder="Nhập địa điểm"></textarea>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="special-requests" class="form-label">Yêu cầu đặc biệt</label>
+            <textarea class="form-control" id="special-requests" rows="3"
+              placeholder="Nhập yêu cầu đặc biệt (nếu có)"></textarea>
+          </div>
+        </form>
+
+        <div class="note rounded border border-danger my-3">
+          <h3 class="text-center  text-bg-danger">Lưu ý</h3>
+          <p>* Xin vui lòng nhập tên hành khách phải đúng tên như trong CCCD/Hộ chiếu (tên không dấu, có dấu cách giữa
+            họ
+            và tên).</p>
+          <p>* Qúy khách vui lòng mang đầy đủ giấy tờ tùy thân</p>
+          <p>* Hãy để lại thông tin chính xác để nhân viên của chúng tôi liên hệ lại cho bạn trong thời gian sớm nhất.
+          </p>
+          <p>* Booking có giá trị khi được nhân viên xác nhận !</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 p-0 ps-2">
+        <!-- Thông tin liên lạc -->
+        <div class="rounded border border-warning">
+          <h3 class="text-center text-bg-warning text-white">Thông tin liên lạc</h3>
+          <form class="p-4">
+            <div class="row g-3 mb-3">
+              <div class="col-12">
+                <label for="name" class="form-label">Họ và tên</label>
+                <input type="text" class="form-control" id="name" placeholder="Nhập họ và tên">
+              </div>
+              <div class="col-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Nhập email">
+              </div>
+              <div class="col-12">
+                <label for="phone" class="form-label">Số điện thoại</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại">
+              </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+              <button type="submit" class="btn btn-primary w-100">Đặt tour</button>
+            </div>
+          </form>
+        </div>
+        <div class="row g-0 bg-warning p-4 pt-2 my-4 rounded">
+          <h1>Gợi ý dành cho bạn</h1>
+
+          <div class="row">
+            <div class="col-6 p-2" ng-repeat="p in products | limitTo : 4:4">
+              <a href="#!detail/{{p.id}}" class="card ">
+                <img src="{{p.image}}" class="card-img" alt="Vũng Tàu">
+                <div class="card-body ">
+                  <p class=" text-center">{{p.name}}</p>
+                  <div class="value-review">
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning">{{p.star}}</span>
+                    <span title="reviewers">({{p.viewer}})</span>
+                  </div>
+                  <p class="card-text">{{p.price | number:0}} VND</p>
+                </div>
+              </a>
+            </div>
+            
+          </div>
+
+        </div>
+
+      </div>
+  </section>
+
+</main>

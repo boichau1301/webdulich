@@ -1,0 +1,114 @@
+<main>
+  <section class="detail-items container">
+    <div class="tourTitle">
+      <h1 class="display-4">{{detailPro.name}}</h1>
+    </div>
+    <div class="tourShare mt-2">
+      <div class="row align-items-center">
+        <div class="col-md-auto">
+          <div class="rating d-flex" >
+            <div class="rating-tour text-warning"><i class="bi bi-star-fill"></i></div>
+            <div class="ms-2">
+              <span><b><span class="rating-value">{{detailPro.star}}</span>/5</b> trong <b><span class="rating-count">{{detailPro.danhgia}}</span></b>
+                ĐÁNH GIÁ</span>
+            </div>
+            <div class="rating-tt ms-2"><i class="fa fa-eye"></i> {{detailPro.viewer}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-7">
+        <div class="img">
+          <img
+            src=" {{detailPro.hinhchitiet}}"
+            class="img-fluid" alt="Tour image">
+        </div>
+        <p class="text-justify my-5">
+          {{detailPro.mota}}
+        </p>
+      </div>
+
+      <div class="col-md-5">
+        <div class="boxDesign1 border border-radius-3 m-2">
+          <div class="name">{{detailPro.name}}</div>
+          <div class="attr">
+            <ul style="list-style-type: none;">
+              <li>
+                <div class="at">Mã tour: {{detailPro.id}}</div>
+              </li>
+              <li>
+                <div class="at">Thời gian: {{detailPro.time}}</div>
+              </li>
+              <li>
+                <div class="at">Khởi hành: {{detailPro.khoihanh}}</div>
+              </li>
+              <li>
+                <div class="at">Vận Chuyển: {{detailPro.vanchuyen}}</div>
+              </li>
+              <li>
+                <div class="at">Xuất phát: {{detailPro.xuatphat}}</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="boxPrice">
+          <div class="price col-12 d-flex justify-content-center display-5">
+            <div class="txt">Giá từ:</div>
+            <div class="red" id="giactt">{{detailPro.price | number:0}} VND</div>
+          </div>
+          <a href="#!cart">
+            <div class="col-12 d-flex justify-content-center mt-5">
+              <button type="submit" class="btn btn-dark w-50" ng-click="addCart(detailPro)">Đặt tour</button>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="list-lich  mx-5 px-5 my-3">
+    <div class="title m-3">
+        <span class="bi bi-map">Lịch trình</span>
+        <div style="display:inline-block;font-size:12px;color:#fff;background:#008fea;padding:0 5px;line-height:25px;border-radius:5px">
+            Lịch khởi hành (Cập nhật 03/11/23)
+        </div>
+    </div>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item" ng-repeat="day in detailPro.lichtrinh">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{day.ngay}}" aria-expanded="true" aria-controls="collapse{{day.ngay}}">
+                    <span>{{day.tieude}}</span>
+                </button>
+            </h2>
+            <div id="collapse{{day.ngay}}" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body" ng-bind="day.motasp"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section class="relative-tour">
+    <div class="container">
+      <div class="row">
+        <h3>Tour liên quan</h3>
+        <div class="col-md-3 mb-3" ng-repeat = " p in products | limitTo: 4">
+          <div class="card">
+            <img
+              src="{{p.image}}"
+              class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">{{p.name}}</h5>
+              <p class="card-text">Thời gian: {{p.time}}</p>
+              <p class="card-text"><small class="text-muted">Khởi hành: {{p.khoihanh}}</small></p>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+</main>

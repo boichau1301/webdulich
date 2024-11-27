@@ -1,0 +1,219 @@
+
+  <div class="container-fluid p-0">
+  
+  
+      <!-- tour section  -->
+      <section
+        class="intro-section d-flex justify-content-start align-items-center container-fluid text-white bg-dark p-5">
+        <div class="text-start">
+          <h1 class="display-4 mb-3">Tour &amp; Trải nghiệm</h1>
+          <h2>Tour du lịch, trải nghiệm khám phá, spa và hơn thế nữa</h2>
+        </div>
+      </section>
+  
+      <section class="tour-in-day">
+        <div class="container">
+          <h1>Trải nghiệm không thể bỏ lỡ</h1>
+          <div class="row g-0 bg-info p-4 pt-2 mt-4 rounded" >
+            <h3><i class="bi bi-1-circle-fill"></i>Tour trong ngày</h3>
+            <div class="col-md-2 p-2" ng-repeat="p in products | limitTo: 6:4">
+              <a href="#!detail/{{p.id}}" class="card ">
+                <img src="{{p.image}}" class="card-img" alt="Vũng Tàu">
+                <div class="card-body ">
+                  <p class=" text-center">{{p.name}}</p>
+                  <div class="value-review">
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning">{{p.star}}</span>
+                    <span title="reviewers">({{p.viewer}})</span>
+                  </div>
+                  <p class="card-text">{{p.price | number:0}} VND</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="main-section mb-5 ">
+        <div class="row m-0">
+          <div class="col-lg-3 col-md-4 ">
+            <div class="filter-list d-flex justify-content-end pb-5">
+              <div class="accordion w-100 px-3" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZero"
+                      aria-expanded="true" aria-controls="collapseZero">
+                      <i class="bi bi-ev-front"></i>
+                      <strong>Sắp xếp</strong>
+                    </button>
+                  </h2>
+                  <div id="collapseZero" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="list-group list-group-flush">
+                        <div class="list-group-item">
+                          <input type="checkbox" id="hcm" name="departure" value="hcm"  ng-click="tang()">
+                          <label for="hcm">Tăng dần  </label>
+                        </div>
+                        <div class="list-group-item">
+                          <input type="checkbox" id="hn" name="departure" value="hn" ng-click="giam()">
+                          <label for="hn">Giảm dần </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                      aria-expanded="true" aria-controls="collapseOne">
+                      <i class="bi bi-ev-front"></i>
+                      <strong>Điểm khởi hành</strong>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="list-group list-group-flush" ng-controller="myctrl">
+                        <div class="list-group-item" ng-repeat="location in departure">
+                          <input type="checkbox" id="{{$index}}" name="departure" ng-value="location">
+                          <label for="{{$index}}">{{location}} <span class="badge text-bg-secondary">34</span></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <i class="bi bi-geo-alt"></i>
+                      <strong>Điểm đến trong nước</strong>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="list-group list-group-flush" ng-controller="myctrl">
+                        <div class="list-group-item" ng-repeat="destination in domestic">
+                          <input type="checkbox" id="{{$index}}" name="domestic" ng-value="destination">
+                          <label for="{{$index}}">{{destination}}</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <i class="bi bi-pin-map"></i>
+                      <strong>Điểm đến nước ngoài</strong>
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="list-group list-group-flush" ng-controller="myctrl">
+                        <div class="list-group-item" ng-repeat="country in international">
+                          <input type="checkbox" id="{{$index}}" name="international" ng-value="country">
+                          <label for="{{$index}}">{{ country }}</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      <i class="bi bi-stopwatch"></i>
+                      <strong>Thời gian</strong>
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="list-group list-group-flush" ng-controller="myctrl">
+                        <div class="list-group-item" ng-repeat="days in duration">
+                          <input type="checkbox" id="{{$index}}" name="duration" ng-value="days">
+                          <label for="{{$index}}">{{days}}</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ms-4">
+              <img src="/WebDuLich/images/banner-lich-khoi-hanh.png" alt="">
+            </div>
+          </div>
+  
+          <div class="tour-items col-lg-9 col-md-8 ">
+            <div class="search-items container-fluid d-flex justify-content-start  ">
+              <form class="row g-3 w-100 justify-content-center ">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 m-3">
+                  <label for="inputCity" class="form-label">Địa điểm</label>
+                  <div class="input-group">
+                    <input type="text" ng-model="search" class="form-control" id="inputCity">
+                    <div class="input-group-text"><i class="bi bi-geo-alt"></i></div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 m-3" ng-controller="myctrl">
+                  <label for="inputState" class="form-label">Tour</label>
+                  <select id="inputState" class="form-select" ng-model="selectedTour">
+                    <option ng-repeat="tour in tours" value="{{tour}}">{{tour}}</option>
+                  </select>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 m-3" ng-controller="myctrl">
+                  <label for="inputZip" class="form-label">Tháng</label>
+                  <select id="inputZip" class="form-select" >
+                    <option ng-repeat="thang in months" value="{{thang}}">{{thang}}</option>
+                  </select>
+                </div>         
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 m-3">
+                  <label for="inputPrice" class="form-label">Giá: </label>
+                  <label>{{ price }} tr VND</label>
+                  <input type="range" class="form-range" min="0" max="10" step="1" id="customRange3" ng-model="price">
+                </div>
+                
+              </form>
+            </div>
+  
+            <div class="container">
+              <div class="row g-0  p-4 pt-2 mt-4 rounded">
+                <div class="col-md-3 p-2" ng-repeat="p in products | filter:search  | orderBy:sort">
+                  <a href="#!detail/{{p.id}}" class="card ">
+                    <img src="{{p.image}}" class="card-img" alt="Vũng Tàu">
+                    <div class="card-body ">
+                      <p class=" text-center">{{p.name}}</p>
+                      <div class="value-review">
+                        <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                        <span class="text-warning">{{p.star}}</span>
+                        <span title="reviewers">({{p.viewer}})</span>
+                      </div>
+                      <p class="card-text">{{p.price | number:0}} VND</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+  
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center mt-5">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+  </div>
+

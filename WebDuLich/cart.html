@@ -1,0 +1,118 @@
+<div class="container p-0">
+  <main class="cart">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="table-responsive">
+          <table class="table table-borderless text-center">
+            <thead>
+              <tr class="table-dark">
+                <th>Chọn</th>
+                <th>Sản phẩm</th>
+                <th>Giá</th>
+                <th>Số người</th>
+                <th>Thành tiền</th>
+                <th>Remove</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="item in cart">
+                <td class="product-check align-middle"><input type="checkbox" style="width: 2em;" ng-model="item.checked"  ng-change="updateTotal()"></td>
+                <td class="product-name d-flex align-items-center align-middle mt-4">
+                  <div class="card" style="width: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <a href="" class="plain">
+                          <img src="{{item.image}}" class="img-fluid" style="height: 200px;width: 300px; object-fit: cover;">
+                        </a>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body text-start">
+                          <a href="#" class="d-block fw-bold mb-2">{{item.name}}</a>
+                          <div>
+                            <span class="d-block"><strong>Ngày khởi hành:</strong> {{item.khoihanh}}</span>
+                            <span class="d-block"><strong>Người lớn:</strong> {{item.price | number:0}} VND</span>
+                            <span class="d-block"><strong>Trẻ em:</strong> {{item.price * 0.9 | number:0}} VND</span>
+                            <span class="d-block"><strong>Em bé:</strong> {{item.price * 0.8 | number:0}} VND</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="product-price align-middle">{{item.price | number:0}} VND</td>
+                <td class="product-adult align-middle" data-title="Adult">
+                  <div class="mb-2">
+                    <label for="" class="d-block">Người lớn</label>
+                    <input type="number" ng-model="item.quantity" min="1" class="form-control d-inline-block"
+                      style="width: 6em;height: auto;">
+                  </div>
+                  <div class="mb-2">
+                    <label for="" class="d-block">Trẻ em (>6 tuổi)</label>
+                    <input type="number" ng-model="item.childQuantity" min="0" class="form-control d-inline-block"
+                      style="width: 6em;height: auto;">
+                  </div>
+                  <div class="mb-2">
+                    <label for="" class="d-block">Em bé (<= 6 tuổi)</label>
+                    <input type="number" ng-model="item.infantQuantity" min="0" class="form-control d-inline-block"
+                      style="width: 6em;height: auto;">
+                  </div>
+                </td>
+                <td class="align-middle">{{calculateSubtotal(item) | number:0}} VND</td>
+                <td class="align-middle"><a class="btn btn-danger" ng-click="removeItem(item)">x</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="text-center mt-3">
+          <form action="">
+            <input type="submit" class="btn btn-primary me-3" value="Update Cart">
+            <input type="submit" class="btn btn-secondary" value="Continue Shopping">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+      <div class="col-12">
+        <form action="">
+          <div class="row">
+            <div class="col-md-6 p-3">
+              <h2 class="text-center">Mã giảm giá</h2>
+              <p class="text-center">Nhập mã giảm giá nếu bạn có.</p>
+              <div class="d-flex justify-content-center">
+                <input class="form-control coupon m-1" type="text" placeholder="Coupon Code">
+                <input class="btn btn-dark " type="submit" value="Apply Coupon">
+              </div>
+            </div>
+            <div class="col-md-6 p-3">
+              <h2 class="text-center">Tổng giỏ hàng</h2>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>Thành tiền:</td>
+                    <td class="text-end">{{totalAmount | number:0}} VND</td>
+                  </tr>
+                  <tr>
+                    <td>Giảm giá:</td>
+                    <td class="text-end">0 VND</td>
+                  </tr>
+                  <tr>
+                    <td>Tổng thành tiền:</td>
+                    <td class="text-end">{{totalAmount | number:0}} VND</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="col-12 d-flex justify-content-center">
+                <button type="submit" class="btn btn-dark w-50">Thanh toán</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+
+
+
+

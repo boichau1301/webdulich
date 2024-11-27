@@ -1,0 +1,80 @@
+<main>
+  <section class="video d-flex justify-content-center align-items-center mb-5">
+    <iframe width="80%" height="500" src="https://www.youtube.com/embed/HeDIU3BlQDo?si=hONk_6Up1EW-8x2f"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </section>
+
+  <section class="container blog-wrapper">
+    <div class="row">
+      <div class="col-lg-9 col-md-8 col-sm-12 mt-4">
+        <div class="card my-3" style="width: 100%;" ng-repeat=" bg in blogs ">
+          <div class="row g-0">
+            <div class="col-md-4 ">
+              <a href="" class="plain ">
+                <img
+                  src="{{bg.image}}"
+                  class="img-fluid rounded-start " style="height: 220px;width: 320px; object-fit: cover;">
+              </a>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="" class="plain text-decoration-none">{{bg.title}}</a>
+                </h5>
+                <p class="card-text">
+                  {{bg.content}}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center mt-5">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-12 post-sidebar mt-4">
+        <aside class="widget border p-3">
+          <h5 class="widget-title border-bottom pb-2 ">Danh mục</h5>
+          <ul class="list-unstyled">
+            <li class="cat-item"><a href="">Điểm đến yêu thích</a></li>
+            <li class="cat-item"><a href="">Kinh nghiệm</a></li>
+            <li class="cat-item"><a href="">Tin tức</a></li>
+          </ul>
+        </aside>
+        <aside class="widget border p-3 mt-3">
+          <h5 class="border-bottom pb-2 ">Bài viết mới</h5>
+          <ul class="list-unstyled">
+            <li><a href="">Sự kiện: Hội An giữa lòng Nhật Bản tại thành phố Yokohama</a></li>
+            <li><a href="">Công viên Oishi tại Fujikawaguchiko</a></li>
+            <li><a href="">Lễ hội Thất tịch – Tanabata Matsuri</a></li>
+            <li><a href="">Tham quan Thủy cung Kamogawa</a></li>
+            <li><a href="">Khám Phá Vẻ Đẹp Sắc Màu của Hoa Kochia Nở Mùa Thu tại Nhật Bản</a></li>
+          </ul>
+        </aside>
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
